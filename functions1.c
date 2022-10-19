@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /* PRINT_UNSIGNED_NUMBER */
 /**
@@ -36,7 +36,7 @@ int print_unsigned(va_list types, char buffer[],
 	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
 
-/* PRINT_UNSIGNED_NUMBER_IN_ OCTAL */
+/* PRINT_UNSIGNED_NUMBER_IN_OCTAL */
 /**
  * print_octal - prints an unsigned number in octal notation
  * @types: list of arguments
