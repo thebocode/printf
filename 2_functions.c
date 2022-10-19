@@ -1,10 +1,11 @@
-#include "main.h"
+include "main.h"
+
 /**
-  *print_string - prints a string
-  *@ap: the arguments
-  *
-  *Return: int
-  */
+ * print_string - prints a string
+ * @ap: the arguments
+ * Return: int
+ */
+
 int print_string(va_list ap)
 {
 	char *str = va_arg(ap, char *);
@@ -21,11 +22,11 @@ int print_string(va_list ap)
 }
 
 /**
- *print_char - prints a character
- *@ap: the arguments
- *
- *Return: int
+ * print_char - prints a character
+ * @ap: the arguments
+ * Return: int
  */
+
 int print_char(va_list ap)
 {
 	char c = va_arg(ap, int);
@@ -35,11 +36,11 @@ int print_char(va_list ap)
 }
 
 /**
- *print_percent - prints percent symbol
- *@ap: the arguments
- *
- *Return: int
+ * print_percent - prints percent symbol
+ * @ap: the arguments
+ * Return: int
  */
+
 int print_percent(va_list ap)
 {
 	(void) ap;
