@@ -1,12 +1,13 @@
-#include "main.h"
+include "main.h"
+
 /**
-  *print_fstring - handles the printing of the arguments
-  *@pos: current loop position
-  *@format: the sting to be formattted
-  *@ap: the arguments
-  *
-  *Return: the number of characters printed
-  */
+ * print_fstring - handles the printing of the arguments
+ * @pos: current loop position
+ * @format: the sting to be formattted
+ * @ap: the arguments
+ * Return: the number of characters printed
+ */
+
 int print_fstring(int *pos, const char *format, va_list ap)
 {
 	conv_spec_t con_spec[] = {
