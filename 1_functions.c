@@ -1,10 +1,11 @@
-#include "main.h"
+include "main.h"
+
 /**
-  *print_unsigned_int - prints unsigned integers
-  *@ap: the arguments
-  *
-  *Return: int
-  */
+ * print_unsigned_int - prints unsigned integers
+ * @ap: the arguments
+ * Return: int
+ */
+
 int print_unsigned_int(va_list ap)
 {
 	unsigned int n = va_arg(ap, unsigned int), var = 1;
@@ -30,11 +31,11 @@ int print_unsigned_int(va_list ap)
 }
 
 /**
- *print_octal_number - prints an octal number
- *@ap: the arguments
- *
- *Return: int
+ * print_octal_number - prints an octal number
+ * @ap: the arguments
+ * Return: int
  */
+
 int print_octal_number(va_list ap)
 {
 	unsigned int n = va_arg(ap, unsigned int), var = 1;
@@ -60,12 +61,12 @@ int print_octal_number(va_list ap)
 }
 
 /**
- *print_hexadecimal_all - prints hexadecimal numbers
- *@ap: the arguments
- *@c: a character that decides what alpha to print
- *
- *Return: int
+ * print_hexadecimal_all - prints hexadecimal numbers
+ * @ap: the arguments
+ * @c: a character that decides what alpha to print
+ * Return: int
  */
+
 int print_hexadecimal_all(va_list ap, char c)
 {
 	unsigned int n = va_arg(ap, unsigned int), var = 1;
@@ -95,22 +96,22 @@ int print_hexadecimal_all(va_list ap, char c)
 }
 
 /**
- *print_hexadecimal - prints hexadecimal numbers
- *@ap: the arguments
- *
- *Return: int
+ * print_hexadecimal - prints hexadecimal numbers
+ * @ap: the arguments
+ * Return: int
  */
+
 int print_hexadecimal(va_list ap)
 {
 	return (print_hexadecimal_all(ap, 'a'));
 }
 
 /**
- *print_hexadecimal_cap - prints hexadecimal numbers
- *@ap: the arguments
- *
- *Return: int
+ * print_hexadecimal_cap - prints hexadecimal numbers
+ * @ap: the arguments
+ * Return: int
  */
+
 int print_hexadecimal_cap(va_list ap)
 {
 	return (print_hexadecimal_all(ap, 'A'));
